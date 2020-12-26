@@ -1,0 +1,4 @@
+#!/bin/bash
+
+email="[A-Za-z0-9_.-]+@[a-z0-9.-]+\.[a-z]+"
+grep -E -I -o -s -h -r $email /etc/ | sed -z 's/\n/, /g;s/, $//' > emails.lst
