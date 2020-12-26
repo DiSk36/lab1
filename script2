@@ -1,0 +1,10 @@
+#!/bin/bash
+
+strRes=""
+read str
+while [[ "$str" != "q" ]]
+do
+strRes="$strRes$str"
+read str
+done
+echo "$strRes"

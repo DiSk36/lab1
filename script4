@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [[ 'pwd' == "$HOME" ]]
+then
+ echo "$HOME"
+ exit 0
+else
+ echo "Error!It's not homedir!"
+ exit 1
+fi

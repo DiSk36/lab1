@@ -1,0 +1,25 @@
+#!/bin/bash
+
+while [[ 1 ]]
+do
+echo "Enter any of points 1 - 4"
+echo "1 - to run nano"
+echo "2 - to run vi"
+echo "3 - to run links"
+echo "4 - to exit"
+read point
+case $point in
+"1" )
+nano
+;;
+"2" )
+vi
+;;
+"3" )
+links
+;;
+"4" )
+break
+;;
+esac
+done

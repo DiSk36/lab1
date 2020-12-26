@@ -1,0 +1,23 @@
+# !/bin/bash
+
+a=$1
+b=$2
+c=$3
+max=0
+if [[ $a -gt $b ]]
+then
+ if [[ $a -gt $c ]]
+ then
+  max=$a
+ else
+  max=$c
+ fi
+else
+ if [[ $b -gt $c ]]
+ then
+  max=$b
+ else
+  max=$c
+ fi
+fi
+echo "$max"
